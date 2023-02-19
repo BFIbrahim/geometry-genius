@@ -124,7 +124,7 @@ document.getElementById('ellipse-btn-calc').addEventListener('click', function (
 
 // Question page Added:
 document.getElementById("blog-btn").addEventListener('click', function () {
-    window.location.href = "blog.html"
+    window.location.href = "answer.html"
 });
 
 
