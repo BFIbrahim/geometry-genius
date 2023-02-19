@@ -9,7 +9,7 @@
     <title>Question and answer</title>
 </head>
 <body class="container mx-auto mt-3">
-   <h2 class="text-center mb-3">Question and Answer</h2>
+   <h2 class="mb-3 text-center text-primary">Question and Answer</h2>
     <div class="accordion mt-3" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
@@ -19,10 +19,8 @@
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-             <strong> Document Object Model (DOM). </strong>DOM is a programming interface and with this we can change the content, structure of a html, style.
-               The purpose of DOM is a developer can easily manipulate the content stracture of a web page.We can easily add,remove,update.
-               With a click button we can do many things as like change the style, set a data from one field to other field.
-               DOM is as like a tree. each object of tree is element or node. That means anything found in HTML and XML we can be accessed.
+             <strong><span class="text-warning">DOM</span> full meaning is Document Object Model.</strong> DOM is a programming interface. Wen can make HTML Interactive using DOM. DOM Is very Important for modern programming. 
+             The main purpose of DOM is we can easily manipulate the HTML content and make HTML Interactive. Developer can make more professional web page using DOM.
             </div>
           </div>
         </div>
@@ -34,12 +32,12 @@
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              There are five ways we select the element using DOM. <br>
-                  1.getElementsByTagName() <br>
-                  2.getElementsByClassName() <br>
-                  3.getElementById() <br>
-                  4.querySelector() <br>
-                  5.querySelectorAll()
+              <p class="text-success">We can select the HTML Elemets Using DOM here Have some way below</p>
+                  1.querySelectorAll() <br>
+                  2.querySelector() <br>
+                  3.getElementsByClassName() <br>
+                  4.getElementById() <br>
+                  5.getElementsByTagName()
             </div>
           </div>
         </div>
@@ -52,8 +50,7 @@
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              Event bubble is the concept of Document Object Model (DOM).When a element receive an event then the event bubble up to parents.
-              and its works in the DOM tree until its gets to root element.
+              Event Buble is a part Of DOM(Document Object Model). We can explane clearly, When We click a HTML Element then first at first be hundled that clicked button and propagated up. And This Event Bubble
             </div>
           </div>
         </div>
@@ -65,10 +62,7 @@
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                A callback function is a function which is executed after another is finished to execution. That means a function can pass arguments to 
-                another function so that it can be executed to another function. 
-                
-                Callbacks are used to handle the results of asynchronous operations, which means that the operation does not block the execution of the rest of the program
+                The cause of using the callback function is that the callback function passed another function as an Argument. We use the callback function because we know many many JavaScript actions are asynchronous. for this cause, we use the callback function.
               </div>
             </div>
           </div>

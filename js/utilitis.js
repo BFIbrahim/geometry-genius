@@ -28,7 +28,7 @@ function setResult(resultItemName, finalResult){
     tr.innerHTML = `
         <td>${resultItemName}</td>
         <td>${finalResult}</td>
-        <td style="background-color : deepskyblue; color : white; border-radius: 5px; text-align:center; cursor:pointer;">${btn.innerHTML}</td>
+        <td style="background-color : deepskyblue; color : white; border-radius: 5px; text-align:center; cursor:pointer; font-weight: bold;">${btn.innerHTML}</td>
     `
 
     resultFieldContainer.appendChild(tr)
