@@ -100,7 +100,7 @@ document.getElementById('Pentagon-btn-calc').addEventListener('click', function 
 
 })
 
-// Card 6 completed
+// Card Six completed
 document.getElementById('ellipse-btn-calc').addEventListener('click', function () {
     const ellipseName = getElementName('ellipse-Name');
 
@@ -126,3 +126,9 @@ document.getElementById('ellipse-btn-calc').addEventListener('click', function (
 document.getElementById("blog-btn").addEventListener('click', function () {
     window.location.href = "blog.html"
 });
+
+
+
+
+
+
