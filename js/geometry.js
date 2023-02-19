@@ -9,22 +9,18 @@ document.getElementById('tringle-calc-btn').addEventListener('click', function (
 
     const tringleResult = 0.5 * tringleBaseValue * tringleHeightValue;
 
-    const tringleBase = document.getElementById('tringle-base-value');
-    const tringleHeight = document.getElementById('tringle-height-value')
-    tringleBase.innerText = tringleBaseValue
-    tringleHeight.innerText = tringleHeightValue;
+    if(isNaN(tringleBaseValue && tringleHeightValue)){
+        alert('Please Enter a valid Number')
+    }
+    else{
+        const tringleBase = document.getElementById('tringle-base-value');
+        const tringleHeight = document.getElementById('tringle-height-value')
+        tringleBase.innerText = tringleBaseValue
+        tringleHeight.innerText = tringleHeightValue;
+    
+        setResult(tringleName, tringleResult)
+    }
 
-    const resultFieldContainer = document.getElementById('result-field-container');
-
-    // const btn = document.createElement("button")
-    // btn.innerHTML = 'Covert to m' + '2'.sup();
-
-
-    const btn = document.createElement("button")
-    btn.innerHTML = 'Covert to m' + '2'.sup();
-    btn.style.color = "red"
-
-    setResult(tringleName, tringleResult, btn)
 })
 
 // card Two Completed
@@ -72,12 +68,17 @@ document.getElementById('rhombus-btn-calc').addEventListener('click', function (
 
     const rhombusResult = 0.5 * rhombusD1Value * rhombusD2Value;
 
-    const rhombusD1 = document.getElementById('rhombos-d1-value')
-    const rhombusD2 = document.getElementById('rhombos-d2-value')
-    rhombusD1.innerText = rhombusD1Value;
-    rhombusD2.innerText = rhombusD2Value;
-
-    setResult(rhombusName, rhombusResult)
+    if(isNaN(rhombusD1Value && rhombusD2Value)){
+        alert('Please Enter a Valid Number')
+    }
+    else{
+        const rhombusD1 = document.getElementById('rhombos-d1-value')
+        const rhombusD2 = document.getElementById('rhombos-d2-value')
+        rhombusD1.innerText = rhombusD1Value;
+        rhombusD2.innerText = rhombusD2Value;
+    
+        setResult(rhombusName, rhombusResult)
+    }
 
 })
 
