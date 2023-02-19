@@ -34,7 +34,7 @@
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title" id="tringle-name">triangle</h2>
-                      <p>Area (A) = 0.5 * b * h</p>
+                      <p>Area (A) = 0.5 * <span id="tringle-base-value">b</span> * <span  id="tringle-height-value">h</span></p>
                         <div class="inline-flex text-center">
                             <input id="tringle-Base-field" class="w-20 bg-gray-100 rounded pl-2" type="text" placeholder="b"> <span class="mr-10">cm</span>
                             <input id="tringle-height-field" class="w-20  bg-gray-100 rounded pl-2" type="text" placeholder="h"> <span>cm</span>
@@ -50,14 +50,14 @@
                       <img class="w-full h-60" src="/images/rectangle.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Rectangle</h2>
-                      <p>Area (A) = w * l</p>
+                      <h2 id="rectangle-Name" class="card-title">Rectangle</h2>
+                      <p>Area (A) = <span id="rectangle-w-value">w</span> * <span id="rectangle-h-value"></span></p>
                         <div class="inline-flex text-center">
-                            <input class="w-20 bg-gray-100 rounded pl-2" type="text" placeholder="w"> <span class="mr-10">cm</span>
-                            <input class="w-20  bg-gray-100 rounded pl-2" type="text" placeholder="l"> <span>cm</span>
+                            <input id="rectangle-W-field" class="w-20 bg-gray-100 rounded pl-2" type="text" placeholder="w"> <span class="mr-10">cm</span>
+                            <input id="rectangle-l-field" class="w-20  bg-gray-100 rounded pl-2" type="text" placeholder="l"> <span>cm</span>
                         </div>
                       <div class="card-actions">
-                        <button class="btn btn-info text-white font-bold mt-5">Calculate</button>
+                        <button id="rectangle-btn-calc" class="btn btn-info text-white font-bold mt-5">Calculate</button>
                       </div>
                     </div>
                 </div>
@@ -67,14 +67,14 @@
                       <img class="w-full h-60" src="/images/parallelogram.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">parallelogram</h2>
-                      <p>Area (A) = b * h</p>
+                      <h2 id="parallelogram-name" class="card-title">parallelogram</h2>
+                      <p>Area (A) = <span id="parallelogram-b-value">b</span> * <span id="parallelogram-h-value">h</span></p>
                         <div class="inline-flex text-center">
-                            <input class="w-20 bg-gray-100 rounded pl-2" type="text" placeholder="b"> <span class="mr-10">cm</span>
-                            <input class="w-20  bg-gray-100 rounded pl-2" type="text" placeholder="h"> <span>cm</span>
+                            <input id="parallelogram-base-field" class="w-20 bg-gray-100 rounded pl-2" type="text" placeholder="b"> <span class="mr-10">cm</span>
+                            <input id="parallelogram-height-field"  class="w-20  bg-gray-100 rounded pl-2" type="text" placeholder="h"> <span>cm</span>
                         </div>
                       <div class="card-actions">
-                        <button class="btn btn-info text-white font-bold mt-5">Calculate</button>
+                        <button id="parallelogram-btn-calc" class="btn btn-info text-white font-bold mt-5">Calculate</button>
                       </div>
                     </div>
                 </div>
