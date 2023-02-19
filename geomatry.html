@@ -33,14 +33,14 @@
                       <img class="w-full h-60" src="/images/triangle.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">triangle</h2>
+                      <h2 class="card-title" id="tringle-name">triangle</h2>
                       <p>Area (A) = 0.5 * b * h</p>
                         <div class="inline-flex text-center">
-                            <input class="w-20 bg-gray-100 rounded pl-2" type="text" placeholder="b"> <span class="mr-10">cm</span>
-                            <input class="w-20  bg-gray-100 rounded pl-2" type="text" placeholder="h"> <span>cm</span>
+                            <input id="tringle-Base-field" class="w-20 bg-gray-100 rounded pl-2" type="text" placeholder="b"> <span class="mr-10">cm</span>
+                            <input id="tringle-height-field" class="w-20  bg-gray-100 rounded pl-2" type="text" placeholder="h"> <span>cm</span>
                         </div>
                       <div class="card-actions">
-                        <button class="btn btn-info text-white font-bold mt-5">Calculate</button>
+                        <button class="btn btn-info text-white font-bold mt-5" id="tringle-calc-btn">Calculate</button>
                       </div>
                     </div>
                 </div>
@@ -144,8 +144,7 @@
                           <th>Favorite Color</th>
                         </tr>
                       </thead> -->
-                      <tbody>
-                        <!-- row 1 -->
+                      <tbody id="result-field-container">
                         <!-- <tr>
                           <th>1</th>
                           <td>Cy Ganderton</td>
@@ -159,7 +158,9 @@
             </div>
         </section>
     </main>
+
     <!-- JavaScript File -->
+    <script src="js/utilitis.js"></script>
     <script src="js/geometry.js"></script>
 </body>
 
