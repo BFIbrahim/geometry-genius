@@ -14,12 +14,21 @@ document.getElementById('tringle-calc-btn').addEventListener('click', function (
     tringleBase.innerText = tringleBaseValue
     tringleHeight.innerText = tringleHeightValue;
 
-    
-    setResult(tringleName, tringleResult)
+    const resultFieldContainer = document.getElementById('result-field-container');
+
+    // const btn = document.createElement("button")
+    // btn.innerHTML = 'Covert to m' + '2'.sup();
+
+
+    const btn = document.createElement("button")
+    btn.innerHTML = 'Covert to m' + '2'.sup();
+    btn.style.color = "red"
+
+    setResult(tringleName, tringleResult, btn)
 })
 
 // card Two Completed
-document.getElementById('rectangle-btn-calc').addEventListener('click', function(){
+document.getElementById('rectangle-btn-calc').addEventListener('click', function () {
     const rectangleName = getElementName('rectangle-Name');
 
     const rectangleWidthValue = getInputValue('rectangle-W-field');
@@ -37,9 +46,9 @@ document.getElementById('rectangle-btn-calc').addEventListener('click', function
 })
 
 // Card Three Completed
-document.getElementById('parallelogram-btn-calc').addEventListener('click', function(){
+document.getElementById('parallelogram-btn-calc').addEventListener('click', function () {
     const parallelogramName = getElementName('parallelogram-name');
-    
+
     const parallelogramBaseValue = getInputValue('parallelogram-base-field')
     const parallelogramHightValue = getInputValue('parallelogram-height-field')
 
@@ -55,9 +64,9 @@ document.getElementById('parallelogram-btn-calc').addEventListener('click', func
 })
 
 // Card Four Completed
-document.getElementById('rhombus-btn-calc').addEventListener('click', function(){
+document.getElementById('rhombus-btn-calc').addEventListener('click', function () {
     const rhombusName = getElementName('rhombus-name');
-    
+
     const rhombusD1Value = getInputValue('rhombus-d1-field')
     const rhombusD2Value = getInputValue('rhombus-d2-field')
 
@@ -73,9 +82,9 @@ document.getElementById('rhombus-btn-calc').addEventListener('click', function()
 })
 
 // Card Five completed
-document.getElementById('Pentagon-btn-calc').addEventListener('click', function(){
+document.getElementById('Pentagon-btn-calc').addEventListener('click', function () {
     const pentagonName = getElementName('pentagon-Name');
-    
+
     const pentagonPValue = getInputValue('Pentagon-p-field')
     const pentagonBValue = getInputValue('Pentagon-b-field')
 
@@ -91,9 +100,9 @@ document.getElementById('Pentagon-btn-calc').addEventListener('click', function(
 })
 
 // Card 6 completed
-document.getElementById('ellipse-btn-calc').addEventListener('click', function(){
+document.getElementById('ellipse-btn-calc').addEventListener('click', function () {
     const ellipseName = getElementName('ellipse-Name');
-    
+
     const ellipseAValue = getInputValue('ellipse-a-field')
     const ellipseBvalue = getInputValue('ellipse-b-field')
 
@@ -109,3 +118,10 @@ document.getElementById('ellipse-btn-calc').addEventListener('click', function()
     setResult(ellipseName, ellipseResult)
 
 })
+
+
+
+// Question page Added:
+document.getElementById("blog-btn").addEventListener('click', function () {
+    window.location.href = "blog.html"
+});

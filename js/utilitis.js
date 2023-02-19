@@ -15,6 +15,8 @@ function getInputValue(elementId){
     return userInputValue
 }
 
+
+
 // Set the result in calcaulation area
 function setResult(resultItemName, finalResult){
     const resultFieldContainer = document.getElementById('result-field-container');
@@ -24,10 +26,9 @@ function setResult(resultItemName, finalResult){
 
     const tr = document.createElement('tr');
     tr.innerHTML = `
-        <td>${1}</td>
         <td>${resultItemName}</td>
         <td>${finalResult}</td>
-        <td>${btn.innerHTML}</td>
+        <td style="background-color : deepskyblue; color : white; border-radius: 5px; text-align:center; cursor:pointer;">${btn.innerHTML}</td>
     `
 
     resultFieldContainer.appendChild(tr)
