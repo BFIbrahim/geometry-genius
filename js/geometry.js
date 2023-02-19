@@ -53,3 +53,59 @@ document.getElementById('parallelogram-btn-calc').addEventListener('click', func
     setResult(parallelogramName, parallelogramResult)
 
 })
+
+// Card Four Completed
+document.getElementById('rhombus-btn-calc').addEventListener('click', function(){
+    const rhombusName = getElementName('rhombus-name');
+    
+    const rhombusD1Value = getInputValue('rhombus-d1-field')
+    const rhombusD2Value = getInputValue('rhombus-d2-field')
+
+    const rhombusResult = 0.5 * rhombusD1Value * rhombusD2Value;
+
+    const rhombusD1 = document.getElementById('rhombos-d1-value')
+    const rhombusD2 = document.getElementById('rhombos-d2-value')
+    rhombusD1.innerText = rhombusD1Value;
+    rhombusD2.innerText = rhombusD2Value;
+
+    setResult(rhombusName, rhombusResult)
+
+})
+
+// Card Five completed
+document.getElementById('Pentagon-btn-calc').addEventListener('click', function(){
+    const pentagonName = getElementName('pentagon-Name');
+    
+    const pentagonPValue = getInputValue('Pentagon-p-field')
+    const pentagonBValue = getInputValue('Pentagon-b-field')
+
+    const pentagonResult = 0.5 * pentagonPValue * pentagonBValue;
+
+    const pentagonP = document.getElementById('pentagon-p-value')
+    const pentagonB = document.getElementById('pentagon-b-value')
+    pentagonP.innerText = pentagonPValue;
+    pentagonB.innerText = pentagonBValue;
+
+    setResult(pentagonName, pentagonResult)
+
+})
+
+// Card 6 completed
+document.getElementById('ellipse-btn-calc').addEventListener('click', function(){
+    const ellipseName = getElementName('ellipse-Name');
+    
+    const ellipseAValue = getInputValue('ellipse-a-field')
+    const ellipseBvalue = getInputValue('ellipse-b-field')
+
+    const ellipseResult = (3.14 * ellipseAValue * ellipseBvalue).toFixed(2);
+
+    const ellipseA = document.getElementById('ellipse-a-value')
+    const ellipseB = document.getElementById('ellipse-b-value')
+    const paiValue = document.getElementById('piValue');
+    paiValue.innerText = 3.14
+    ellipseA.innerText = ellipseAValue;
+    ellipseB.innerText = ellipseBvalue;
+
+    setResult(ellipseName, ellipseResult)
+
+})

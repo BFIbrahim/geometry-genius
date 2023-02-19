@@ -28,7 +28,7 @@
     <main>
         <section class="px-12 flex flex-col md:flex-row lg:flex-row"> 
             <div class="geometry-cards mt-5 w-[70%] grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-                <div class="card w-full bg-base-100 shadow-xl border-2">
+                <div class="card w-full bg-base-100 shadow-xl border-2 bg-fuchsia-400">
                     <figure class="px-10 pt-10">
                       <img class="w-full h-60" src="/images/triangle.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -79,19 +79,19 @@
                     </div>
                 </div>
 
-                <div class="card w-full bg-base-100 shadow-xl border-2">
+                <div class="card w-full bg-base-100 shadow-xl border-2 bg-sky-500">
                     <figure class="px-10 pt-10">
                       <img class="w-full h-60" src="/images/rhombus.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">rhombus</h2>
-                      <p>Area (A) = 0.5 * d <sub>1</sub> * d <sub>2</sub></p>
+                      <h2 id="rhombus-name" class="card-title">rhombus</h2>
+                      <p>Area (A) = 0.5 * <span id="rhombos-d1-value">d</span> <sub>1</sub> * <span id="rhombos-d2-value">d</span> <sub>2</sub></p>
                         <div class="inline-flex text-center">
-                            <input class="w-20 bg-gray-100 rounded pl-2" type="text" placeholder="d1"> <span class="mr-10">cm</span>
-                            <input class="w-20  bg-gray-100 rounded pl-2" type="text" placeholder="d2"> <span>cm</span>
+                            <input id="rhombus-d1-field" class="w-20 bg-gray-100 rounded pl-2" type="text" placeholder="d1"> <span class="mr-10">cm</span>
+                            <input id="rhombus-d2-field" class="w-20  bg-gray-100 rounded pl-2" type="text" placeholder="d2"> <span>cm</span>
                         </div>
                       <div class="card-actions">
-                        <button class="btn btn-info text-white font-bold mt-5">Calculate</button>
+                        <button id="rhombus-btn-calc" class="btn btn-info text-white font-bold mt-5">Calculate</button>
                       </div>
                     </div>
                 </div>
@@ -101,14 +101,14 @@
                       <img class="w-full h-60" src="/images/pentagon.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">parallelogram</h2>
-                      <p>Area (A) = 0.5 * p * b</p>
+                      <h2 id="pentagon-Name" class="card-title">Pentagon</h2>
+                      <p>Area (A) = 0.5 * <span id="pentagon-p-value">p</span> * <span id="pentagon-b-value">b</span></p>
                         <div class="inline-flex text-center">
-                            <input class="w-20 bg-gray-100 rounded pl-2" type="text" placeholder="p"> <span class="mr-10">cm</span>
-                            <input class="w-20  bg-gray-100 rounded pl-2" type="text" placeholder="b"> <span>cm</span>
+                            <input id="Pentagon-p-field" class="w-20 bg-gray-100 rounded pl-2" type="text" placeholder="p"> <span class="mr-10">cm</span>
+                            <input id="Pentagon-b-field" class="w-20  bg-gray-100 rounded pl-2" type="text" placeholder="b"> <span>cm</span>
                         </div>
                       <div class="card-actions">
-                        <button class="btn btn-info text-white font-bold mt-5">Calculate</button>
+                        <button id="Pentagon-btn-calc" class="btn btn-info text-white font-bold mt-5">Calculate</button>
                       </div>
                     </div>
                 </div>
@@ -118,20 +118,20 @@
                       <img class="w-full h-60" src="/images/ellipse.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">parallelogram</h2>
-                      <p>Area (A) =  兀ab</p>
+                      <h2 id="ellipse-Name" class="card-title">Ellipse</h2>
+                      <p>Area (A) =  <span id="piValue">兀</span> * <span id="ellipse-a-value">a</span> * <span id="ellipse-b-value">b</span></p>
                         <div class="inline-flex text-center">
-                            <input class="w-20 bg-gray-100 rounded pl-2" type="text" placeholder="a"> <span class="mr-10">cm</span>
-                            <input class="w-20  bg-gray-100 rounded pl-2" type="text" placeholder="b"> <span>cm</span>
+                            <input id="ellipse-a-field" class="w-20 bg-gray-100 rounded pl-2" type="text" placeholder="a"> <span class="mr-10">cm</span>
+                            <input id="ellipse-b-field" class="w-20  bg-gray-100 rounded pl-2" type="text" placeholder="b"> <span>cm</span>
                         </div>
                       <div class="card-actions">
-                        <button class="btn btn-info text-white font-bold mt-5">Calculate</button>
+                        <button id="ellipse-btn-calc" class="btn btn-info text-white font-bold mt-5">Calculate</button>
                       </div>
                     </div>
                 </div>
             </div>
 
-            <div class="geomatry-result-filed border rounded-md w-full md:w-[30%] lg:w-[30%] mx-auto lg:ml-5 md:ml-5 ml-0">
+            <div class="geomatry-result-filed border rounded-md w-full md:w-[30%] lg:w-[30%] mx-auto lg:ml-5 md:ml-5 ml-0 mt-5">
                 <h1 class="text-xl text-center font-bold">Area Calculation</h1>
                 <div class="overflow-x-auto">
                     <table class="table w-full">
@@ -151,7 +151,6 @@
                           <td>Quality Control Specialist</td>
                           <td>Blue</td>
                         </tr> -->
-
                       </tbody>
                     </table>
                   </div>
